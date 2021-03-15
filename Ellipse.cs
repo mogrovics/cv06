@@ -24,7 +24,7 @@ namespace cv06
 
         public void Draw()
         {
-            Console.WriteLine("Ellipse: a = {0}, b = {1},     area = {2}", axisA, axisB, Area());
+            Console.WriteLine("Ellipse:     a = {0}, b = {1}              S = {2:0.00}", axisA, axisB, Area());
         }
     }
 }

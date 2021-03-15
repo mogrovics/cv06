@@ -15,6 +15,7 @@ namespace cv06
             radius = r;
         }
 
+        // S = PI * r^2
         public double Area()
         {
             return Math.PI * radius * radius;
@@ -22,7 +23,7 @@ namespace cv06
 
         public void Draw()
         {
-            Console.WriteLine("Circle: r = {0},     area = {1}", radius, Area());
+            Console.WriteLine("Circle:      r = {0}                     S = {1:0.00}", radius, Area());
         }
 
     }

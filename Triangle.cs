@@ -18,7 +18,8 @@ namespace cv06
             edgeB = b;
             edgeC = c;
         }
-        
+
+        // Heron's formula (https://en.wikipedia.org/wiki/Heron%27s_formula)
         public double Area()
         {
             double s = (edgeA + edgeB + edgeC) / 2;
@@ -27,7 +28,7 @@ namespace cv06
 
         public void Draw()
         {
-            Console.WriteLine("Triangle: a = {0}, b = {1}, c = {2}    area = {3}", edgeA, edgeB, edgeC, Area());
+            Console.WriteLine("Triangle:    a = {0}, b = {1}, c = {2}       S = {3:0.00}", edgeA, edgeB, edgeC, Area());
         }
     }
 }

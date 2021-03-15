@@ -35,7 +35,7 @@ namespace cv06
 
         public void Draw()
         {
-            Console.WriteLine("Pyramid: a = {0}, b = {1}, h = {2}     area = {3}, volume = {4}", width, length, height, Area(), Volume());
+            Console.WriteLine("Pyramid:     a = {0}, b = {1}, h = {2}       S = {3:0.00}, V = {4:0.00}", width, length, height, Area(), Volume());
         }
 
     }

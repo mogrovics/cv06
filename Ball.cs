@@ -27,7 +27,7 @@ namespace cv06
 
         public void Draw()
         {
-            Console.WriteLine("Ball: r = {0},     area = {1}, volume = {2}", radius, Area(), Volume());
+            Console.WriteLine("Ball:        r = {0}                     S = {1:0.00}, V = {2:0.00}", radius, Area(), Volume());
         }
     }
 }

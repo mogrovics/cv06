@@ -24,7 +24,7 @@ namespace cv06
 
         public void Draw()
         {
-            Console.WriteLine("Rectangle: a = {0}, b = {1},     area = {2}", height, width, Area());
+            Console.WriteLine("Rectangle:   a = {0}, b = {1}              S = {2:0.00}", height, width, Area());
         }
     }
 }

@@ -17,9 +17,10 @@ namespace cv06
             height = h;
         }
 
+        // S = S_p + S_pl = 2 * PI * r^2 + 2 * PI * r * h 
         public double Area()
         {
-            return 2 * Math.PI * radius * radius + 2 * Math.PI * radius * height;
+            return 2 * Math.PI * (radius * radius + radius * height);
         }
 
         public double Volume()
@@ -29,7 +30,7 @@ namespace cv06
 
         public void Draw()
         {
-            Console.WriteLine("Cylinder: r = {0}, h = {1}    area = {2}, volume = {3}", radius, height, Area(), Volume());
+            Console.WriteLine("Cylinder:    r = {0}, h = {1}              S = {2:0.00}, V = {3:0.00}", radius, height, Area(), Volume());
         }
     }
 }

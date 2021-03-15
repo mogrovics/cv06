@@ -14,6 +14,7 @@ namespace cv06
             double totalArea3D = 0;
             double totalVolume = 0;
 
+            // array of graphical objects
             GraphicalObject[] graphics =
             {
                 new Circle(3),
@@ -26,8 +27,14 @@ namespace cv06
                 new Pyramid(2, 2, 7)
             };
 
+            /*
+             * foreach cycle iterates through the 'graphics' array,
+             * calls Draw() method of each element
+             * and decides if an object is 2D or 3D to increment total area/volume values
+             */
             foreach (GraphicalObject.IDraw obj in graphics)
             {
+                Console.WriteLine("-------------------------------------------------------------");
                 obj.Draw();
 
                 if (obj is Object2D)
@@ -42,9 +49,10 @@ namespace cv06
                 }
             }
 
-            Console.WriteLine("Total area of 2D objects: {0}\n" +
-                              "Total area of 3D objects: {1}\n" +
-                              "Total volume: {2}", totalArea2D, totalArea3D, totalVolume);
+            Console.WriteLine("-------------------------------------------------------------\n" + 
+                              "\nTotal area of 2D objects: {0, 6:0.00}\n" +
+                              "Total area of 3D objects: {1:0.00}\n" +
+                              "Total volume: {2, 18:0.00}", totalArea2D, totalArea3D, totalVolume);
 
             Console.ReadLine();
         }
