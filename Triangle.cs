@@ -14,9 +14,12 @@ namespace cv06
 
         public Triangle(double a, double b, double c)
         {
-            edgeA = a;
-            edgeB = b;
-            edgeC = c;
+            if ((a + b > c) && (a + c > b) && (b + c > a))
+            {
+                edgeA = a;
+                edgeB = b;
+                edgeC = c;
+            }
         }
 
         // Heron's formula (https://en.wikipedia.org/wiki/Heron%27s_formula)
@@ -28,7 +31,15 @@ namespace cv06
 
         public override void Draw()
         {
-            Console.WriteLine("Triangle:    a = {0}, b = {1}, c = {2}       S = {3:0.00}", edgeA, edgeB, edgeC, Area());
+            if (edgeA != 0)
+            {
+                Console.WriteLine("Triangle:    a = {0}, b = {1}, c = {2}       S = {3:0.00}", edgeA, edgeB, edgeC, Area());
+            }
+            else
+            {
+                Console.WriteLine("Invalid dimentions.");
+            }
+            
         }
     }
 }

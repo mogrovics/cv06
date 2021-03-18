@@ -13,8 +13,8 @@ namespace cv06
 
         public Rectangle(double a, double b)
         {
-            height = a;
-            width = b;
+            height = Math.Abs(a);
+            width = Math.Abs(b);
         }
 
         public override double Area()

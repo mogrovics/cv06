@@ -14,9 +14,9 @@ namespace cv06
 
         public Pyramid(double a, double b, double h)
         {
-            height = h;
-            width = a;
-            length = b;
+            height = Math.Abs(h);
+            width = Math.Abs(a);
+            length = Math.Abs(b);
         }
 
         public override double Area()

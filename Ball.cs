@@ -12,7 +12,7 @@ namespace cv06
 
         public Ball(double r)
         {
-            radius = r;
+            radius = Math.Abs(r);
         }
 
         public override double Area()

@@ -14,9 +14,9 @@ namespace cv06
 
         public Cuboid(double a, double b, double c)
         {
-            height = a;
-            width = b;
-            length = c;
+            height = Math.Abs(a);
+            width = Math.Abs(b);
+            length = Math.Abs(c);
         }
         public override double Area()
         {

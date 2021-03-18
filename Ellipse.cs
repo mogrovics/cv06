@@ -13,8 +13,8 @@ namespace cv06
 
         public Ellipse(double a, double b)
         {
-            axisA = a;
-            axisB = b;
+            axisA = Math.Abs(a);
+            axisB = Math.Abs(b);
         }
 
         public override double Area()
