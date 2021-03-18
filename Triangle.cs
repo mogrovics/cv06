@@ -31,9 +31,11 @@ namespace cv06
 
         public override void Draw()
         {
+            Console.WriteLine("Triangle:");
+
             if (edgeA != 0)
             {
-                Console.WriteLine("Triangle:    a = {0}, b = {1}, c = {2}       S = {3:0.00}", edgeA, edgeB, edgeC, Area());
+                Console.WriteLine("a = {0}, b = {1}, c = {2}       S = {3:0.00}", edgeA, edgeB, edgeC, Area());
             }
             else
             {

@@ -29,7 +29,7 @@ namespace cv06
 
         public override void Draw()
         {
-            Console.WriteLine("Cylinder:    r = {0}, h = {1}              S = {2:0.00}, V = {3:0.00}", radius, height, Area(), Volume());
+            Console.WriteLine("Cylinder:\nr = {0}, h = {1}              S = {2:0.00}, V = {3:0.00}", radius, height, Area(), Volume());
         }
     }
 }

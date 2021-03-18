@@ -20,7 +20,7 @@ namespace cv06
                 new Circle(3),
                 new Rectangle(3, 2),
                 new Ellipse(2, 3),
-                new Triangle(2, 2, 5),
+                new Triangle(4, 2, 5),
                 new Cuboid(2, 3, 5),
                 new Cylinder(3, 5),
                 new Ball(3),

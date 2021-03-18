@@ -23,7 +23,7 @@ namespace cv06
 
         public override void Draw()
         {
-            Console.WriteLine("Circle:      r = {0}                     S = {1:0.00}", radius, Area());
+            Console.WriteLine("Circle:\nr = {0}                     S = {1:0.00}", radius, Area());
         }
 
     }

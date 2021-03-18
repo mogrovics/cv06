@@ -30,7 +30,7 @@ namespace cv06
 
         public override void Draw()
         {
-            Console.WriteLine("Cuboid:      a = {0}, b = {1}, c = {2}       S = {3:0.00}, V = {4:0.00}", height, width, length, Area(), Volume());
+            Console.WriteLine("Cuboid:\na = {0}, b = {1}, c = {2}       S = {3:0.00}, V = {4:0.00}", height, width, length, Area(), Volume());
         }
     }
 }

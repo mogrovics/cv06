@@ -24,7 +24,7 @@ namespace cv06
 
         public override void Draw()
         {
-            Console.WriteLine("Ellipse:     a = {0}, b = {1}              S = {2:0.00}", axisA, axisB, Area());
+            Console.WriteLine("Ellipse:\na = {0}, b = {1}              S = {2:0.00}", axisA, axisB, Area());
         }
     }
 }

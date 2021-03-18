@@ -27,7 +27,7 @@ namespace cv06
 
         public override void Draw()
         {
-            Console.WriteLine("Ball:        r = {0}                     S = {1:0.00}, V = {2:0.00}", radius, Area(), Volume());
+            Console.WriteLine("Ball:\nr = {0}                     S = {1:0.00}, V = {2:0.00}", radius, Area(), Volume());
         }
     }
 }
