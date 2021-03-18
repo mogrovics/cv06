@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace cv06
 {
-    abstract class Object3D : GraphicalObject
+    public abstract class Object3D : GraphicalObject
     {
         public abstract double Area();
         public abstract double Volume();

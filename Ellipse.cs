@@ -6,15 +6,15 @@ using System.Threading.Tasks;
 
 namespace cv06
 {
-    class Ellipse : Object2D
+    public class Ellipse : Object2D
     {
         private double axisA;
         private double axisB;
 
         public Ellipse(double a, double b)
         {
-            axisA = Math.Abs(a);
-            axisB = Math.Abs(b);
+            axisA = a;
+            axisB = b;
         }
 
         public override double Area()

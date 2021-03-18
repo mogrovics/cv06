@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace cv06
 {
-    abstract class GraphicalObject
+    public abstract class GraphicalObject
     {
         public abstract void Draw();
     }

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace cv06
 {
-    class Pyramid : Object3D
+    public class Pyramid : Object3D
     {
         private double height;
         private double width;
@@ -14,15 +14,15 @@ namespace cv06
 
         public Pyramid(double a, double b, double h)
         {
-            height = Math.Abs(h);
-            width = Math.Abs(a);
-            length = Math.Abs(b);
+            height = h;
+            width = a;
+            length = b;
         }
 
         public override double Area()
         {
-            double widthBaseHeight = Math.Sqrt(height * height + (width / 2));
-            double lengthBaseHeight = Math.Sqrt(height * height + (length / 2));
+            double widthBaseHeight = Math.Sqrt(Math.Pow(height, 2) + Math.Pow((width / 2), 2));
+            double lengthBaseHeight = Math.Sqrt(Math.Pow(height, 2) + Math.Pow((length / 2), 2));
 
 
             return width * length + 2 * (width * widthBaseHeight / 2 + length * lengthBaseHeight / 2);

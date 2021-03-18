@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace cv06
 {
-    class Circle : Object2D
+    public class Circle : Object2D
     {
         private double radius;
 
@@ -18,7 +18,7 @@ namespace cv06
         // S = PI * r^2
         public override double Area()
         {
-            return Math.PI * radius * radius;
+            return Math.PI * Math.Pow(radius, 2);
         }
 
         public override void Draw()

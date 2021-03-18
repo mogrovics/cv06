@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace cv06
 {
-    class Triangle : Object2D
+    public class Triangle : Object2D
     {
         private double edgeA;
         private double edgeB;
@@ -39,7 +39,7 @@ namespace cv06
             }
             else
             {
-                Console.WriteLine("Invalid dimentions.");
+                Console.WriteLine("Invalid dimensions.");
             }
             
         }

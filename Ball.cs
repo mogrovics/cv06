@@ -6,23 +6,23 @@ using System.Threading.Tasks;
 
 namespace cv06
 {
-    class Ball : Object3D
+    public class Ball : Object3D
     {
         private double radius;
 
         public Ball(double r)
         {
-            radius = Math.Abs(r);
+            radius = r;
         }
 
         public override double Area()
         {
-            return 4 * Math.PI * radius * radius;
+            return 4 * Math.PI * Math.Pow(radius, 2);
         }
 
         public override double Volume()
         {
-            return (4 / 3) * Math.PI * radius * radius * radius;
+            return (4 / 3) * Math.PI * Math.Pow(radius, 3);
         }
 
         public override void Draw()

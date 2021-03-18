@@ -6,15 +6,15 @@ using System.Threading.Tasks;
 
 namespace cv06
 {
-    class Rectangle : Object2D 
+    public class Rectangle : Object2D 
     { 
         private double height;
         private double width;
 
         public Rectangle(double a, double b)
         {
-            height = Math.Abs(a);
-            width = Math.Abs(b);
+            height = a;
+            width = b;
         }
 
         public override double Area()

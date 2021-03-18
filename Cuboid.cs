@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace cv06
 {
-    class Cuboid : Object3D
+    public class Cuboid : Object3D
     {
         private double height;
         private double width;
@@ -14,9 +14,9 @@ namespace cv06
 
         public Cuboid(double a, double b, double c)
         {
-            height = Math.Abs(a);
-            width = Math.Abs(b);
-            length = Math.Abs(c);
+            height = a;
+            width = b;
+            length = c;
         }
         public override double Area()
         {
