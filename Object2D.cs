@@ -8,9 +8,6 @@ namespace cv06
 {
     abstract class Object2D : GraphicalObject
     {
-        public interface IObject2D
-        {
-            double Area();
-        }
+        public abstract double Area();
     }
 }

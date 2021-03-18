@@ -32,20 +32,20 @@ namespace cv06
              * calls Draw() method of each element
              * and decides if an object is 2D or 3D to increment total area/volume values
              */
-            foreach (GraphicalObject.IDraw obj in graphics)
+            foreach (GraphicalObject tmp in graphics)
             {
                 Console.WriteLine("-------------------------------------------------------------");
-                obj.Draw();
+                tmp.Draw();
 
-                if (obj is Object2D)
+                if (tmp is Object2D)
                 {
-                    totalArea2D += ((Object2D.IObject2D)obj).Area();
+                    totalArea2D += ((Object2D)tmp).Area();
                 } 
 
-                if (obj is Object3D)
+                if (tmp is Object3D)
                 {
-                    totalArea3D += ((Object3D.IObject3D)obj).Area();
-                    totalVolume += ((Object3D.IObject3D)obj).Volume();
+                    totalArea3D += ((Object3D)tmp).Area();
+                    totalVolume += ((Object3D)tmp).Volume();
                 }
             }
 

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace cv06
 {
-    class Ball : Object3D, Object3D.IObject3D, Object3D.IDraw
+    class Ball : Object3D
     {
         private double radius;
 
@@ -15,17 +15,17 @@ namespace cv06
             radius = r;
         }
 
-        public double Area()
+        public override double Area()
         {
             return 4 * Math.PI * radius * radius;
         }
 
-        public double Volume()
+        public override double Volume()
         {
             return (4 / 3) * Math.PI * radius * radius * radius;
         }
 
-        public void Draw()
+        public override void Draw()
         {
             Console.WriteLine("Ball:        r = {0}                     S = {1:0.00}, V = {2:0.00}", radius, Area(), Volume());
         }

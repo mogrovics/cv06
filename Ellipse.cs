@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace cv06
 {
-    class Ellipse : Object2D, Object2D.IObject2D, Object2D.IDraw
+    class Ellipse : Object2D
     {
         private double axisA;
         private double axisB;
@@ -17,12 +17,12 @@ namespace cv06
             axisB = b;
         }
 
-        public double Area()
+        public override double Area()
         {
             return Math.PI * axisA * axisB;
         }
 
-        public void Draw()
+        public override void Draw()
         {
             Console.WriteLine("Ellipse:     a = {0}, b = {1}              S = {2:0.00}", axisA, axisB, Area());
         }

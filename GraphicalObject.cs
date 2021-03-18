@@ -8,9 +8,6 @@ namespace cv06
 {
     abstract class GraphicalObject
     {
-        public interface IDraw
-        {
-            void Draw();
-        }
+        public abstract void Draw();
     }
 }

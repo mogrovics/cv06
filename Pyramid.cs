@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace cv06
 {
-    class Pyramid : Object3D, Object3D.IObject3D, Object3D.IDraw
+    class Pyramid : Object3D
     {
         private double height;
         private double width;
@@ -19,7 +19,7 @@ namespace cv06
             length = b;
         }
 
-        public double Area()
+        public override double Area()
         {
             double widthBaseHeight = Math.Sqrt(height * height + (width / 2));
             double lengthBaseHeight = Math.Sqrt(height * height + (length / 2));
@@ -28,12 +28,12 @@ namespace cv06
             return width * length + 2 * (width * widthBaseHeight / 2 + length * lengthBaseHeight / 2);
         }
 
-        public double Volume()
+        public override double Volume()
         {
             return (height * width * length) / 3;
         }
 
-        public void Draw()
+        public override void Draw()
         {
             Console.WriteLine("Pyramid:     a = {0}, b = {1}, h = {2}       S = {3:0.00}, V = {4:0.00}", width, length, height, Area(), Volume());
         }

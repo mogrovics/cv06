@@ -6,8 +6,8 @@ using System.Threading.Tasks;
 
 namespace cv06
 {
-    class Rectangle : Object2D, Object2D.IObject2D, Object2D.IDraw
-    {
+    class Rectangle : Object2D 
+    { 
         private double height;
         private double width;
 
@@ -17,12 +17,12 @@ namespace cv06
             width = b;
         }
 
-        public double Area()
+        public override double Area()
         {
             return height * width;
         }
 
-        public void Draw()
+        public override void Draw()
         {
             Console.WriteLine("Rectangle:   a = {0}, b = {1}              S = {2:0.00}", height, width, Area());
         }

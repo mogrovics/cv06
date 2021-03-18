@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace cv06
 {
-    class Cylinder : Object3D, Object3D.IObject3D, Object3D.IDraw
+    class Cylinder : Object3D
     {
         private double radius;
         private double height;
@@ -17,18 +17,17 @@ namespace cv06
             height = h;
         }
 
-        // S = S_p + S_pl = 2 * PI * r^2 + 2 * PI * r * h 
-        public double Area()
+        public override double Area()
         {
             return 2 * Math.PI * (radius * radius + radius * height);
         }
 
-        public double Volume()
+        public override double Volume()
         {
             return Math.PI * radius * radius * height;
         }
 
-        public void Draw()
+        public override void Draw()
         {
             Console.WriteLine("Cylinder:    r = {0}, h = {1}              S = {2:0.00}, V = {3:0.00}", radius, height, Area(), Volume());
         }
